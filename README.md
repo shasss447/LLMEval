@@ -1,17 +1,15 @@
 # LLMEval
 
-LLMEval is a Python library for interacting with a given Language Model (LM) endpoint to perform predefined evaluations for fairness, bias, and hallucinations. This library provides easy-to-use functionalities for testing these aspects using a provided dataset.
+LLMEval is a Python library for interacting with a given Large Language Model (LLM) endpoint to perform predefined evaluations for fairness, bias, and hallucinations. This library provides easy-to-use functionalities for testing these aspects using a provided dataset.
 
 ## Installation
-
-You can install LLMEval using pip:
-
+you can clone this repository:
 ```bash
-pip install llmeval
+git clone https://github.com/shasss447/LLMEval.git
 ```
-Documentation
 -------------
 
+## Documentation
 ### Eval Class
 
 The `Eval` class handles the interaction with the LM endpoint. It includes the following methods:

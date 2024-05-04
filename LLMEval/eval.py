@@ -8,7 +8,6 @@ class Eval:
         self.endpoint_url = endpoint_url
         """
         Initialize Eval object with the specified LLM endpoint URL.
-        
         Args:
         - endpoint_url (str): The URL of the LLM endpoint.
         """
@@ -16,11 +15,9 @@ class Eval:
     def scan(self, dataset, test_cases):
         """
         Perform evaluations on the provided dataset based on the specified test cases.
-        
         Args:
         - dataset (list of dicts): The dataset containing questions, answers, and contexts.
         - test_cases (list of TestCases): The list of test cases to evaluate.
-        
         Returns:
         - results (dict): A dictionary containing evaluation results for each question.
         """
@@ -39,10 +36,8 @@ class Eval:
     def send_request(self, question):
         """
         Send a request to the LLM endpoint with the given question.
-        
         Args:
         - question (str): The question to send to the endpoint.
-        
         Returns:
         - response (dict or None): The response from the endpoint as a dictionary, or None if the request fails.
         """
@@ -60,11 +55,9 @@ class Eval:
     def parse_response(self, response, test_cases):
         """
         Parse the response from the LLM endpoint based on the specified test cases.
-        
         Args:
         - response (dict): The response from the LLM endpoint.
         - test_cases (list of TestCases): The list of test cases to parse.
-        
         Returns:
         - parsed_data (dict): A dictionary containing parsed evaluation results based on the test cases.
         """
@@ -88,10 +81,8 @@ class TestCases(Enum):
 def parse_dataset(dataset_file):
     """
     Parse the dataset from a CSV file.
-    
     Args:
     - dataset_file (str): The path to the CSV file containing the dataset.
-    
     Returns:
     - dataset (list of dicts): The parsed dataset containing questions, answers, and contexts.
     """
@@ -106,7 +97,6 @@ def parse_dataset(dataset_file):
 def get_test_cases():
     """
     Get test cases from user input.
-    
     Returns:
     - test_cases (list of TestCases): The list of test cases selected by the user.
     """
